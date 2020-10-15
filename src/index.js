@@ -1,17 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, {useState} from 'react';
+import ReactDom from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
+import './App.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import Main from './components/Main';
+import MainHeader from './components/MainHeader';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+const App = () => {
+
+    const [showHeader, setHeader] = useState(1);
+
+
+    return(
+        <BrowserRouter>
+        <div>
+         
+            <MainHeader showHeader={showHeader}/>
+            <div className="main">
+                <Main />
+            </div>
+ 
+        </div>
+        </BrowserRouter>
+    )
+}
+
+ReactDom.render(<App />, document.getElementById('root'));

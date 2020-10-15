@@ -1,0 +1,48 @@
+.showcase{
+    max-width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.showcase h1{
+    font-size: calc(18px + 5vmin);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.showcase h2{
+    font-size: calc(10px + 2vmin);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+
+.showcase p{
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: calc(7px + 2vmin);
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.showcase_btn_login{
+    border: white solid 2px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 50px;
+    margin: 0 10px;
+}
+
+.showcase_btn_register{
+    border: white solid 1px;
+    background-color: white; 
+    color: rgba(26, 108, 122, 1);
+    padding: 10px 50px;
+    margin: 0 10px;
+}
